@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #efefef;
+    /* height: 3000px; */
+}
+
+/* NAVBAR */
+nav {
+    background-color: #1876f2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    position: fixed;
+    top: 0;
+    transition: .3s ease;
+}
+
+nav.sticky {
+    padding: 5px 50px;
+}
+
+.leftNav,
+.rightNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.leftNav img {
+    width: 150px;
+}
+
+.leftNav ul {
+    margin: 0 50px;
+}
+
+.leftNav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.leftNav ul li img {
+    text-decoration: none;
+    width: 30px;
+    cursor: pointer;
+}
+
+.search {
+    /* background-color: red; */
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    background-color: #f8f8f8;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.search input {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+    margin: 0 5px;
+}
+
+.user-profile img {
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+.online {
+    position: relative;
+}
+
+.online::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 0;
+    right: 2px;
+    z-index: 1;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    background-color: lightgreen;
+}
+
+/* CONTENT */
+.induk {
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    padding: 15px 50px;
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    gap: 10px;
+    margin-top: 65px;
+}
+
+/* left sidebar */
+.leftSidebar {}
+
+.left-SbItem {
+    border-bottom: 1px solid #ccc;
+}
+
+.left-SbItem a,
+.right-SbItem a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+}
+
+.left-SbItem a img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.left-SbItem a:last-child {
+    color: royalblue;
+}
+
+.shorcut {
+    margin-top: 20px;
+}
+
+.shorcut p {
+    margin: 10px 0;
+}
+
+.right-SbItem a img {
+    width: 55px;
+    margin-right: 15px;
+    /* margin: 10px 0; */
+}
+
+/* right sidebar */
+.rightSidebar {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+}
+
+.event {
+    /* background-color: red; */
+    width: 100%;
+    /* padding: 10px; */
+}
+
+.nav-event,
+.nav-adv,
+.nav-conver {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event .nav-event a {
+    text-decoration: none;
+}
+
+.event-content {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    gap: 15px;
+}
+
+.event-content .boxs {
+    /* background-color: red; */
+}
+
+.event-content .boxs .box {
+    border-radius: 10px;
+    width: 100px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-bottom: 10px solid royalblue;
+}
+
+.event-content .text img {
+    width: 25px;
+}
+
+.event-content .text p,
+a {
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.advertisement {
+    margin: 30px 0;
+}
+
+
+
+.content-adv img {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.content-conver {
+    margin: 20px 0;
+}
+
+.content-conver a {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.content-conver img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Main Content */
+.main {
+    /* background-color: #fff; */
+    padding: 5px;
+}
+
+.status {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.status-item img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+.posts {
+    margin: 25px 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: 500px 500px 500px; */
+}
+
+.posts .post {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.posts .post img {
+    border-radius: 10px;
+    width: 100%;
+}
